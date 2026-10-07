@@ -27,6 +27,7 @@ function add(a){
 
 function erase(){
     document.getElementById("text").innerHTML = "";
+    document.getElementById("history").innerHTML = "";
 }
 
 function addtext(){ 
