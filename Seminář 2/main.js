@@ -33,3 +33,26 @@ function erase(){
 function addtext(){ 
     document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + " " + document.getElementById("vstup").value;
 }
+
+function backspace(){
+    
+    let delka = document.getElementById("text").innerHTML.length;
+    let minus = delka - 1;
+    if(delka > 0){
+        document.getElementById("text").innerHTML = document.getElementById("text").innerHTML.substring(0,minus);
+    }
+    else{
+        alert("Text je prázdný!");
+    }
+}
+
+function deletos(){
+
+    let delka = document.getElementById("text").innerHTML.length;
+    if(delka > 0){
+        document.getElementById("text").innerHTML = document.getElementById("text").innerHTML.substring(1,delka);
+    }
+    else{
+        alert("Text je prázdný");
+    }
+}
