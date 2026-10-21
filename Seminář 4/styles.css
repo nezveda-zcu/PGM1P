@@ -1,0 +1,9 @@
+div{
+    float: left;
+    margin: 25px;
+    width: auto;
+}
+.oprava{
+    color: red;
+    text-decoration: underline;
+}
