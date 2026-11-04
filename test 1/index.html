@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="pozadi">
+            <p class="tlacitka">
+                <button id="showseznam" onclick="showseznam()">Zobrazit seznam</button>
+                <input type="text" id="vstup">
+                <button id="potvrdit" onclick="potvrdit()">Potvrdit</button>
+            </p>
+            <p class="tlacitka">
+                <label id="seznam"></label>
+            </p>
+            <p>
+                <img id="picture" src="/images/cat.png" alt="cat">
+            </p>
+            <p class="tlacitka">
+                <button onclick="zmena()">ZMĚNIT</button>
+                <button onclick="catbtn()">cat</button>
+                <button onclick="pesbtn()">pes</button>
+                <button onclick="tygrbtn()">tygr</button>
+            </p>
+            <p class="tlacitka"><button onclick="deletehist()">Smazat historii</button></p>
+            <p class="tlacitka">
+                <label id="historie">Historie hledání:</label>
+            </p>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="main.js" async defer></script>
+    </body>
+</html>
