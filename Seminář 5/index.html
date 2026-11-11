@@ -15,9 +15,9 @@
     <body>
         <h1>Uhádněte číslo</h1>
         <h2>Zadejte rozsah čísel</h2>
-        <input id="od" type="text" placeholder="Od"> <input id="do" type="text" placeholder="Do"> <button id="potvrdit">Potvrdit a zamítchat</button>
+        <input id="od" type="text" placeholder="Od"> <input id="do" type="text" placeholder="Do"> <button id="potvrdit" onclick="vysledek()">Potvrdit a zamítchat</button>
         <p>
-            <label onclick="vysledek()">Zde se zobrazí výsledek</label>
+            <label onclick="tipnout()" id="vyslednytext">Zde se zobrazí výsledek</label>
         </p>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
